@@ -1,0 +1,208 @@
+* {
+	box-sizing; border-box;
+}
+
+#container {
+	margin: 0 auto;
+	min-width: 100%;
+	min-height: 100%;
+/* 	border: 2px solid blue; */
+}
+
+.section {
+	margin: 60px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	height: 31%;
+/* 	border: 2px solid black; */
+	display: flex;
+}
+
+.column {
+	margin: 2px;
+	width: 32px;
+	height: 340px;
+/* 	posiiton: relative; */
+/* 	border: 2px solid blue; */
+}
+
+#col1 {
+	flex: 1;
+	position: relative;
+}
+
+#col2 {
+	flex:.5;
+	position: relative;
+}
+
+#col3 {
+	flex: 4;
+	position: relative;
+}
+
+.date {
+	right: 0;
+	width: 50px;
+	height: 30px;
+/* 	border: 2px solid black; */
+	position: absolute;
+}
+
+.date p {
+	font-size: 10px;
+	text-align: right;
+	color: #c2d0d8;
+}
+
+.time {
+	top: 6%;
+	right: 0;
+	width: 70px;
+	height: 50px;
+/* 	border: 2px solid black; */
+	position: absolute;
+}
+
+.time > * {
+	text-align: right;
+	font-size: 30px;
+	margin: auto;
+	color: #8acaea;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.outerCircle {
+	margin: 0 auto;
+/* 	border: 2px solid red; */
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	left: 12.5px;
+	position: absolute;
+	background-color: #b7def4;
+}
+
+.innerCircle {
+	margin: 0 auto;
+/* 	border: 2px solid blue; */
+	border-radius: 50%;
+	height: 35px;
+	width: 35px;
+/* 	position: absolute; */
+	margin-top: 50%;
+	transform: translateY(-50%);
+	background-color: #50a2d1;
+}
+
+.extended {
+	margin: 0 auto;
+/* 	border: 2px solid green; */
+	width: 15px;
+	height: 92%;
+	left: 29.5px;
+	top: 45px;
+	position: absolute;
+	background-color: #b7def4;
+
+}
+
+#lastExtend {
+	height: 84.5%;
+}
+
+.icon { 
+	margin: 0 auto;
+	position: absolute;
+	top: 10%;
+	left: 14%;
+	transform: translate(-50%; -50%);
+}
+
+.icon:hover {
+	cursor: pointer;
+	transform: rotate(360deg);
+	transition: 2s;
+}
+
+.textWrap {
+	margin: 0 auto;
+	min-height: 320px;
+	width: 90%;
+/* 	border: 2px solid black; */
+	border-radius: 2%;
+	margin-right: 8%;
+}
+
+.textWrap h4, .textWrap p {
+	margin: 0 auto;
+	color: white;
+	padding-top: 3rem;
+	padding-left: 1rem;
+}
+
+.textWrap h4 {
+	font-size: 20px;
+	font-family: serif;
+}
+
+.textWrap p{
+	padding: 1rem;
+}
+
+#wrap1 {
+	background-color: #79c1e7;
+}
+
+#pointer1 {
+	background-color: #79c1e7;
+}
+
+#wrap2 {
+	background-color: #4797c4;
+}
+
+#pointer2 {
+	background-color: #4797c4;
+}
+
+hr {
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.pointer {
+	width: 15px;
+	height: 15px;
+/* 	border: 2px solid red; */
+	bottom: 310px;
+	left: 10px;
+	transform: rotate(45deg);
+	position: absolute;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v7/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 25px;
+  color: white;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  word-wrap: normal;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
